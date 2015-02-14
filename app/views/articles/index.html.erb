@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <td>id</td>
+    <td>title</td>
+  </tr>
+  <% @mt.each do |fuck| %>
+    <tr>
+      <td style="padding:3px"><%= fuck.id %></td>
+      <td style="padding:3px"><%= link_to fuck.title, fuck %></td>
+    </tr>
+   <% end %>
+</table>
